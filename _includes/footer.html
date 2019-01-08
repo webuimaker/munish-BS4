@@ -1,0 +1,55 @@
+{% include contact.html %}
+
+ <!-- jquery  scripts -->
+ 
+    <script src="/js/jquery-2.2.4.min.js"></script>
+    <!-- poper js -->
+    <script src="/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
+	
+    <!--<script src='https://threejs.org/build/three.min.js'></script>-->
+	<script src="js/three.min.js"></script>
+	<script src="js/Projector.js"></script>
+<!--<script src='https://threejs.org/examples/js/renderers/Projector.js'></script>-->
+<!--<script src='https://threejs.org/examples/js/renderers/CanvasRenderer.js'></script>-->
+	<script src="js/CanvasRenderer.js"></script>
+<!--<script src='https://threejs.org/examples/js/libs/stats.min.js'></script>-->
+	<script src="js/stats.min.js"></script>
+ <script  src="js/index.js"></script>
+<script>
+	function openNav() {
+	  document.getElementById("myNav").style.width = "100%";
+	}
+	function closeNav() {
+	  document.getElementById("myNav").style.width = "0%";
+	  
+	}
+jQuery(document).ready(function($){
+	   $(".toggle-link").click(function(){
+			$(".overlay-content").addClass('close-pos');
+			$(".linked-link").addClass('hide-linked');
+			
+	});
+	$(".closebtn").click(function(){
+			$(".overlay-content").removeClass('close-pos');
+			$(".linked-link").removeClass('hide-linked');
+	});
+
+	//Toggle form
+	//jQuery('.get-contact').hide();
+	jQuery('.get-touch').click(function(){
+		jQuery('.get-contact').slideToggle();
+	});
+
+	jQuery('.contact-close').click(function(){
+		jQuery('.get-contact').hide();
+	});
+
+});
+</script>
+
+
+</body>
+
+</html>
