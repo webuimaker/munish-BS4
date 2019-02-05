@@ -30,6 +30,14 @@
 
         });
 
+        $(".menu-btn").on("click", function () {
+            $("body").toggleClass("menu-open");
+            ///$(".humburger-menu").toggleClass("active");
+            return false;
+
+        });
+		
+
 
 
         /*

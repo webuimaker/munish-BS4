@@ -45,6 +45,22 @@ jQuery(document).ready(function($){
 	jQuery('.contact-close').click(function(){
 		jQuery('.get-contact').hide();
 	});
+	
+	 $(".menu-btn").on("click", function () {
+            $("body").toggleClass("menu-open");
+             if ($("body").hasClass("menu-open")) {
+				$(".menu-btn__icon .fa").removeClass("fa-bars")
+				$(".menu-btn__icon .fa").addClass("fa-times")
+			}
+			else{
+				$(".menu-btn__icon .fa").removeClass("fa-times ")
+				$(".menu-btn__icon .fa").addClass("fa-bars")
+			}
+			
+			$(".menu-btn__icon").toggleClass("active");
+            return false;
+
+        });
 
 });
 </script>
